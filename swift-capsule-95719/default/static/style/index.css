@@ -1,0 +1,99 @@
+body {
+	background: url('/static/img/blurred-background.jpg');
+	background-size: cover;
+}
+
+noscript {
+	color: red;
+	font-size: 16pt;
+}
+
+.nav, .pagination, .carousel, .panel-title a { 
+	cursor: pointer; 
+}
+
+.title {
+	text-align: center;
+}
+
+li.pidgeon_capacity {
+	display: inline-block;
+	margin: 5px -15px;
+	margin-left: 10px;
+	padding-top: 10px;
+  	padding-bottom: 10px;
+  	padding-left: 20px;
+  	padding-right: 20px;
+  	line-height: 20px;
+}
+
+li.connection_status {
+	margin: 5px -15px;
+	margin-left: 10px;
+	margin-right: 10px;
+	padding-top: 10px;
+  	padding-bottom: 10px;
+  	padding-left: 20px;
+  	padding-right: 20px;
+  	line-height: 20px;
+  	border: 1px solid black;
+  	border-radius: 25px;
+  	max-width: 160px;
+}
+
+.CarouselCtrl {
+	width: 600px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.navbar-default {
+	background: rgba(180, 200, 200, 0.8);
+}
+
+.heading {
+	text-align: center;
+}
+
+.our_company {
+	max-width: 1024px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.contact {
+	max-width: 400px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.contact_table td {
+	padding: 2px;
+}
+
+.log_in {
+	width: 20%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.log_in table td {
+	padding: 2px;
+}
+
+.register {
+	width: 20%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.register table td {
+	padding: 2px;
+}
+
+.register_status {
+	border: 1px solid black;
+	background-color: yellow;
+	padding: 10px;
+	margin-top: 10px;
+}

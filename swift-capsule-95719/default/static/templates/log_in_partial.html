@@ -1,0 +1,12 @@
+<form ng-controller="LogInCtrl" class="log_in">
+	
+	<h2> Log in </h2>
+	
+	<table>
+		<tr><td>Username: </td><td><input type="text" name="username" ng-model="username" required></td></tr>
+		<tr><td>Password: </td><td><input type="password" name="password" ng-model="password" required></td></tr>
+		<tr><td>&nbsp;</td><td><button name="log_in" ng-click="log_in()">Log in</button></td></tr>
+	</table>
+	
+	<div ng-bind="log_in_status" ng-class="{'register_status': log_in_status}"></div>
+</form>

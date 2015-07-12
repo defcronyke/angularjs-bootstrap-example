@@ -1,0 +1,15 @@
+<form ng-controller="RegisterCtrl" class="register">
+	
+	<h2> Register a new account </h2>
+	
+	<table>
+		<tr><td>Username: </td><td><input type="text" name="username" ng-model="username" required></td></tr>
+		<tr><td>Password: </td><td><input type="password" name="password" ng-model="password" required></td></tr>
+		<tr><td>Confirm Password: </td><td><input type="password" name="confirm_password" ng-model="confirm_password" required></td></tr>
+		<tr><td>Email: </td><td><input type="text" name="email" ng-model="email" required></td></tr>
+		<tr><td>&nbsp;</td><td><button name="register" ng-click="register()">Register</button></td></tr>
+	</table>
+
+	<div id="register_status" ng-bind="register_status" ng-class="{'register_status': register_status}"></div>
+
+</form>

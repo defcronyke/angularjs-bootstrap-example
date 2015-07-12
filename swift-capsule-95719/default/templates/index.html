@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html ng-app="app">
+	
+<head>
+	<title> B1 Pidgeon Factory </title>
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet">
+	<link href="/static/style/index.css" rel="stylesheet">
+	
+	<script src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.0-rc.1/angular.min.js"></script>
+	<script src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.15/angular-route.min.js"></script>
+	<script src="//angular-ui.github.io/bootstrap/ui-bootstrap-tpls-0.13.0.min.js"></script>
+	<script src="/static/src/websocket_client.js"></script>
+	<script src="/static/src/index.js"></script>
+	<script src="/static/src/register.js"></script>
+	<script src="/static/src/log_in.js"></script>
+	
+</head>
+	
+<body ng-controller="BodyCtrl">
+	
+	<noscript> Please enable JavaScript to view this website. </noscript>
+	
+	<h1 class="title"> B1 Pidgeon Factory </h1>
+	
+	<nav class="navbar navbar-default" ng-controller="HeaderCtrl">
+		
+	  <div class="container-fluid">
+	    <!-- Brand and toggle get grouped for better mobile display -->
+	    <div class="navbar-header">
+	      <button type="button" class="navbar-toggle collapsed" ng-init="navCollapsed = true" ng-click="navCollapsed = !navCollapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+	        <span class="sr-only">Toggle navigation</span>
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	      </button>
+	      <a class="navbar-brand" href="#/">Logo</a>
+	    </div>
+	
+	    <!-- Collect the nav links, forms, and other content for toggling -->
+	    <div class="collapse navbar-collapse" ng-class="{'in':!navCollapsed}" id="bs-example-navbar-collapse-1">
+	      <ul class="nav navbar-nav">
+	        <li ng-class="{ active: isActive('/')}"><a href="#/"> Main </a></li>
+	        <li ng-class="{ active: isActive('/contact')}"><a href="#/contact"> Contact </a></a></li>
+	      </ul>
+	      <ul class="nav navbar-nav navbar-right">
+	        <li class="pidgeon_capacity" ng-bind="pidgeon_capacity"></li>
+	        <li class="connection_status" ng-bind="connection_status"></li>
+	        <li ng-class="{ active: isActive('/register')}"><a href="#/register">Register</a></li>
+	        <li ng-class="{ active: isActive('/log_in')}"><a href="#/log_in">Log in</a></li>
+	      </ul>
+	    </div><!-- /.navbar-collapse -->
+	  </div><!-- /.container-fluid -->
+	</nav>
+		
+    <div ng-view></div>
+	
+</body>
+	
+</html>

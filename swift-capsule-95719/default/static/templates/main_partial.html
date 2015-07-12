@@ -1,0 +1,23 @@
+<h2 class="heading"> We will make the best pidgeons for you </h2>
+
+<div ng-controller="CarouselCtrl" class="CarouselCtrl">
+	<div style="height: 305px">
+		<carousel interval="myInterval">
+			<slide ng-repeat="slide in slides" active="slide.active">
+				<img ng-src="{{slide.image}}" style="margin:auto;">
+				<div class="carousel-caption">
+					<h4>Slide {{$index+1}}</h4>
+					<p>{{slide.text}}</p>
+				</div>
+			</slide>
+		</carousel>
+	</div>
+</div>
+
+<h2 class="heading"> Our Company </h2>
+
+<h4 class="our_company">
+	At B1 Pidgeon Factory, we strive to be one of the top pidgeon manufacturers in our building. 
+	We take great care of our newly minted pidgeons until they are one day old, then we package 
+	them tightly and launch them into the sun.
+</h4>
